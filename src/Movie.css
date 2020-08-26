@@ -1,0 +1,8 @@
+.movie__data{
+    color: gray;
+}
+
+.movie__data > .movie__title {
+    color: black;
+}
+
