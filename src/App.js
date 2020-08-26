@@ -19,7 +19,6 @@ class App extends React.Component {
   getMovies = async () => {
     // const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
     // console.log(movies.data.data.movies)  <<  movies 안에 data 안에 data 안에 movies 가지고 와야 해서
-
     const {
       data: {
         data: { movies },
@@ -34,7 +33,7 @@ class App extends React.Component {
     this.setState({ movies, isLoading: false });
   };
 
-  // application이 마운트되면 getmovie 함수 호출
+  // 랜더링 후 마운트되면 getmovie 함수 호출
   componentDidMount() {
     this.getMovies();
   }
@@ -42,13 +41,13 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <section class="container">
+      <section className="container">
         {isLoading ? (
-          <div class="loader">
-            <span class="loader__text">Loading...</span>
+          <div className="loader">
+            <span className="loader__text">Loading...</span>
           </div>
         ) : (
-          <div class="movies">
+          <div className="movies">
             {movies.map((movie) => (
               <Movie
                 key={movie.id}
@@ -57,6 +56,7 @@ class App extends React.Component {
                 title={movie.title}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
             ))}
           </div>
