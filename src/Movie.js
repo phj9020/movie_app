@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import "./Movie.css"; files deleted
+import "./Movie.css";
 
 //state 가 필요없으면 class component일 필요가 없다
 function Movie({ year, title, summary, poster, genres }) {
@@ -18,7 +18,7 @@ function Movie({ year, title, summary, poster, genres }) {
             </li>
           ))}
         </ul>
-        <p className="movie__summary">{summary}</p>
+        <p className="movie__summary">{summary.slice(0, 180)}...</p>
       </div>
     </div>
   );
