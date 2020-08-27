@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Movie.css";
+// import "./Movie.css"; files deleted
 
 //state 가 필요없으면 class component일 필요가 없다
 function Movie({ year, title, summary, poster, genres }) {
@@ -13,7 +13,9 @@ function Movie({ year, title, summary, poster, genres }) {
         <ul className="movie__genre">
           {/* genres 어레이에 key를 넣어줘야해서 2번째로 index argument를 넣어줌 */}
           {genres.map((genre, index) => (
-            <li key={index} className="genres__genre">{genre}</li>
+            <li key={index} className="genres__genre">
+              {genre}
+            </li>
           ))}
         </ul>
         <p className="movie__summary">{summary}</p>
