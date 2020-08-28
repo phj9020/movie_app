@@ -1,0 +1,36 @@
+.about__container {
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  border: 1px solid #606060ff;
+  width: 500px;
+  height: 550px;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.introduction h1,
+.introduction h3,
+.introduction h4,
+.introduction a {
+  color: #ffffffff;
+  text-align: center;
+}
+
+.introduction a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 21.28px 0;
+}
