@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import hotmail from "../image/hotmail.png";
 import name from "../image/name.svg";
-import cinema from "../image/cinema.png";
+import github from "../image/github.png";
 
 function About(props) {
   console.log(props);
@@ -15,8 +15,8 @@ function About(props) {
         <h4>HAN JIN PARK</h4>
         <img src={hotmail} alt="hotmail" />
         <h4>phj9020@hotmail.com</h4>
-        <img src={cinema} alt="cinema" />
-        <a href="phj9020.github.io/movie_app">Go to Movie App</a>
+        <img src={github} alt="cinema" />
+        <a href="phj9020.github.io/movie_app">https://github.com/phj9020/movie_app</a>
       </div>
     </section>
   );
