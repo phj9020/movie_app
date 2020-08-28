@@ -16,7 +16,7 @@ function About(props) {
         <img src={hotmail} alt="hotmail" />
         <h4>phj9020@hotmail.com</h4>
         <img src={github} alt="cinema" />
-        <a href="phj9020.github.io/movie_app">https://github.com/phj9020/movie_app</a>
+        <a href="https://github.com/phj9020/movie_app">https://github.com/phj9020/movie_app</a>
       </div>
     </section>
   );

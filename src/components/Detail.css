@@ -1,0 +1,49 @@
+.detail__container {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.detail__container img {
+  width: 50%;
+  height: 60%;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.detail__data {
+  margin-top: 50px;
+  padding: 2px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail__data .detail__title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #f2edd7ff;
+}
+
+.detail__year,
+.detail__summary {
+  margin: 10px 0px;
+}
+
+.detail__genre {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.detail__genre li {
+  margin-right: 15px;
+}
+
+/* .detail__data div:not(:last-child){
+    margin-bottom: 10px;
+} */
